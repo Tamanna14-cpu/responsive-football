@@ -83,6 +83,7 @@ hr{
     width: 300px;
     height: 230px;
     padding-top: 20px;
+    border-radius: 15px;
 }
 .player h3{
     font-weight: bold;
@@ -131,19 +132,19 @@ fieldset{
     border: none;
 }
 legend{
-    background-color: gray;
+    background-color: slateblue;
     color: white;
-    padding: 10px 30px;
+    padding: 15px 30px;
     border-radius: 5px;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 500;
     margin-left: 15px;
 }
 .fieldset{
     padding-bottom: 30px;
 }
 .fieldset p{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 450;
     color: white;
 }
@@ -170,14 +171,14 @@ legend{
     align-items: center;
 }
 .transbox{
-    background-color: #ffffff;
-    opacity: 0.6;
+    background-color: black;
+    opacity: 0.7;
 
 }
 .subscribe-text{
     padding-left: 400px;
     padding-right: 400px;
-    color: black;
+    color: white;
 }
 .subscribe-text h4{
     font-size: 20px;
@@ -248,11 +249,11 @@ footer img{
 
 /* mobile devices */
 @media only screen and (max-width: 688px){
-    
-    .header, main{
+
+    body, .header, main, .subscribe{
         width: 100%;        
     }
-    .players{
+    .players, .header{
         grid-template-columns: repeat(1, 1fr);
     }
     .player, .highlights, .header, .fieldset-area{
@@ -263,6 +264,26 @@ footer img{
     }
     .highlight-img{
         padding-top: 15px;
+        padding-left: 192px;
         margin-bottom: 0;
+    }
+    .highlights-text{
+        padding-left: 178px;
+    }
+    fieldset{
+        margin-bottom: 142px;
+        width: 123%;
+        height: 233px;
+        margin-left: 364px;
+    }
+    footer img{
+        padding-left: 254px;
+        padding-top: 20px;
+    }
+    .icons{
+        padding-left: 290px
+    }
+    footer h5{
+        padding-left: 141px;
     }
 }
