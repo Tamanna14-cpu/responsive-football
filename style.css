@@ -247,14 +247,22 @@ footer img{
 /* media-queries */
 
 /* mobile devices */
-@media only screen and(max-width: 688px){
-    .header{
+@media only screen and (max-width: 688px){
+    
+    .header, main{
         width: 100%;        
     }
     .players{
         grid-template-columns: repeat(1, 1fr);
     }
-    .player{
+    .player, .highlights, .header{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .highlight-img{
+        padding-top: 15px;
+        margin-bottom: 0;
     }
 }
