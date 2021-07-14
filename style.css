@@ -255,7 +255,7 @@ footer img{
     .players{
         grid-template-columns: repeat(1, 1fr);
     }
-    .player, .highlights, .header{
+    .player, .highlights, .header, .fieldset-area{
         display: flex;
         flex-direction: column;
         justify-content: center;
